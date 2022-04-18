@@ -1,10 +1,12 @@
 import React from "react";
 import { Container } from "./components/Container";
+import { Header } from "./components/Header";
 import { Home } from "./components/Home";
 const App = () => {
   return (
     <Container>
-      <Home></Home>
+      <Header />
+      <Home />
     </Container>
   );
 };
