@@ -1,7 +1,13 @@
 :root {
-  --frist-color: #1b18f9;
+  --frist-color: #0400fc;
+  --frist-color-alt: #0400fc99;
   --second-color: #e146ad;
+  --second-color-alt: #e146ad96;
   --text-color: #150f21;
+  // --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  //   "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  //   sans-serif;
+  --body-font: "Poppins";
 }
 
 body {
@@ -13,9 +19,7 @@ body {
 
   color: var(--text-color);
   font-size: 1.2rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: var(--body-font);
 }
 html {
   scroll-behavior: smooth;
@@ -31,6 +35,7 @@ p {
 button,
 input {
   border: none;
+  font-family: var(--body-font);
   outline: none;
 }
 * {
@@ -62,4 +67,11 @@ ul {
 
 ul {
   list-style: none;
+}
+button,
+a {
+  cursor: pointer;
+}
+img {
+  pointer-events: none;
 }
