@@ -4,7 +4,7 @@ import style from "./styles.module.scss";
 
 export const Header = () => {
   return (
-    <header>
+    <header className={style.header}>
       <a href="#home">
         <img src={logo} alt="logo" />
         waterworks
